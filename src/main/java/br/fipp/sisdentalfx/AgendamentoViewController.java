@@ -79,6 +79,10 @@ public class AgendamentoViewController implements Initializable {
     }
 
     public void onProcedimento(ActionEvent actionEvent) {
+        BoxBlur bb = new BoxBlur(15,15,10);
+        dpDiaConsulta.getScene().getRoot().setEffect(bb);
+        UIControl.abreModal("procedimento-table-view.fxml");
+        dpDiaConsulta.getScene().getRoot().setEffect(null);
     }
 
 
