@@ -65,9 +65,17 @@ public class AgendamentoViewController implements Initializable {
     }
 
     public void onMedico(ActionEvent actionEvent) {
+        BoxBlur bb = new BoxBlur(15,15,10);
+        dpDiaConsulta.getScene().getRoot().setEffect(bb);
+        UIControl.abreModal("medico-table-view.fxml");
+        dpDiaConsulta.getScene().getRoot().setEffect(null);
     }
 
     public void onMaterial(ActionEvent actionEvent) {
+        BoxBlur bb = new BoxBlur(15,15,10);
+        dpDiaConsulta.getScene().getRoot().setEffect(bb);
+        UIControl.abreModal("material-table-view.fxml");
+        dpDiaConsulta.getScene().getRoot().setEffect(null);
     }
 
     public void onProcedimento(ActionEvent actionEvent) {
